@@ -1,0 +1,49 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="CurrencyChanger.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CurrencyChanger"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox x:ConnectionId='5' Header="Melyik valutából?" x:Name="from_currency" PlaceholderText="Váassz egy valutát" Width="200" Grid.Column="0" Grid.Row="0"
+                  VerticalAlignment="Center"                                      Margin="50 0 0 0"/>
+            <ComboBox x:ConnectionId='6' Header="Melyik valutába?" x:Name="to_currency" PlaceholderText="Váassz egy valutát" Width="200" Grid.Column="1" Grid.Row="0"
+                  VerticalAlignment="Center"                                     Margin="50 0 0 0" />
+            <TextBox x:ConnectionId='7' x:Name="from_cash" Grid.Column="0" Grid.Row="1" Margin="0 0 50 0" VerticalAlignment="Center"
+                 HorizontalAlignment="Right" Width="220" Height="50"                                    />
+            <TextBlock Text="Írd be mennyi szeretnél váltani: " Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Margin="50,0,280,0"
+                       FontSize="22"/>
+            <Button x:ConnectionId='8' Content="Valuták megcserélése" Name="swap_btn"                        Grid.Column="1" Grid.Row="1" VerticalAlignment="Center"
+                HorizontalAlignment="center"/>
+        </Grid>
+        <Button x:ConnectionId='2' Content="Calculate!" Name="calculate_btn"                              Grid.Column="1" Grid.Row="2" Width="200" Height="60" VerticalAlignment="Top"
+                HorizontalAlignment="Center"  FontSize="20" Margin="0,0,0,0"/>
+        <TextBlock x:ConnectionId='3'  Text="" Name="to_cash" Grid.Row="2" Margin="515,0,0,0" VerticalAlignment="Center" 
+                   HorizontalAlignment="Left" Width="200" Height="66" FontSize="32" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='4'  Text="" Name="errormsg_txt" Grid.Row="2"  VerticalAlignment="Top" Foreground="Red"
+                   HorizontalAlignment="Left" Width="402" Height="66" FontSize="20" FontWeight="Medium" Margin="84,3,0,0"/>
+    </Grid>
+</Page>
+
+

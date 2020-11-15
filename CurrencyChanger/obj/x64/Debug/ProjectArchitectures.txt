@@ -1,0 +1,1 @@
+C:\Users\septe\source\repos\CurrencyChanger\CurrencyChanger\CurrencyChanger.csproj;x64

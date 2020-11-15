@@ -1,0 +1,12 @@
+﻿"C:\Users\septe\source\repos\CurrencyChanger\CurrencyChanger\obj\x86\Release\ilc\in\CurrencyChanger.exe"
+"C:\Users\septe\source\repos\CurrencyChanger\CurrencyChanger\obj\x86\Release\ilc\in\Microsoft.Data.Sqlite.dll"
+"C:\Users\septe\source\repos\CurrencyChanger\CurrencyChanger\obj\x86\Release\ilc\in\Newtonsoft.Json.dll"
+"C:\Users\septe\source\repos\CurrencyChanger\CurrencyChanger\obj\x86\Release\ilc\in\SQLitePCLRaw.batteries_v2.dll"
+"C:\Users\septe\source\repos\CurrencyChanger\CurrencyChanger\obj\x86\Release\ilc\in\SQLitePCLRaw.core.dll"
+"C:\Users\septe\source\repos\CurrencyChanger\CurrencyChanger\obj\x86\Release\ilc\in\SQLitePCLRaw.provider.e_sqlite3.dll"
+/Lib:"C:\Users\septe\source\repos\CurrencyChanger\CurrencyChanger\obj\x86\Release\ilc\in"
+/Lib:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.compiler\2.2.8-rel-28605-00\tools\x86\ilc\lib\Private"
+/WinMD:"C:\Users\septe\source\repos\CurrencyChanger\CurrencyChanger\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd"
+/VSTelemetrySessionSettings:"{"IsOptedIn":true,"HostName":"Dev14","AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","AppId":1001,"UserId":"aa99b555-046e-4ded-b3ba-f997d9475d77","Id":"d0dc58d3-7f63-4394-9947-df3d25f287f3","ProcessStartTime":637395021379685552}"
+/RdXmlPath:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\2.2.8-rel-28605-00\tools\LibraryXML"
+/RunOnlyPreDR
