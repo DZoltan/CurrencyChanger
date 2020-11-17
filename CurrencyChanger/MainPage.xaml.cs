@@ -13,14 +13,14 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
+using System.Threading;
+using System.Threading.Tasks;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace CurrencyChanger
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
         Calculating calculate = new Calculating();
@@ -29,9 +29,22 @@ namespace CurrencyChanger
         "TRY", "JPY", "RUB", "KRW", "AUD"};
         public MainPage()
         {
-            //Json_save save = new Json_save();
             this.InitializeComponent();
             calculate_btn.IsEnabled = false;
+            load_databank();
+
+        }
+          
+
+        public async void load_databank()
+        {
+
+            await Task.Run(() =>
+            {
+                Deseralizer rates = new Deseralizer("https://api.ratesapi.io/api/latest");
+                Calculating temp_rates = new Calculating(rates);
+                calculate = temp_rates;
+            });
 
         }
 
@@ -90,9 +103,5 @@ namespace CurrencyChanger
             }
         }
 
-        private void from_currency_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
     }
 }

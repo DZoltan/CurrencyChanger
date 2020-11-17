@@ -10,6 +10,16 @@ namespace CurrencyChanger
     {
         Deseralizer rates = new Deseralizer();
 
+        public Calculating(Deseralizer deseralizer)
+        {
+            rates = deseralizer;
+        }
+
+        public Calculating()
+        {
+
+        }
+
 
         public double calculate_currency(string from, double cash, string to)
         {

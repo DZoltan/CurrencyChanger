@@ -23,14 +23,16 @@ namespace CurrencyChanger
         public Root _rated;
 
 
-        public Deseralizer()
+        public Deseralizer(string link)
         {
 
             //string json = @".\ratedapi.json";
-            string json = new WebClient().DownloadString("https://api.ratesapi.io/api/latest");
+            string json = new WebClient().DownloadString(link);
             Root ratedapi = JsonConvert.DeserializeObject<Root>(json);
             _rated = ratedapi;
         }
+
+        public Deseralizer() { }
 
 
 
